@@ -10,12 +10,12 @@ export default function WebLayout({ children }: { children: ReactNode }) {
         className="pointer-events-none absolute inset-0 z-0 bg-[url('/bg.png')] bg-cover bg-top bg-no-repeat opacity-20"
       />
       <div className="relative z-10 py-5">
-        <header className="grid grid-cols-[1fr_auto] items-start gap-4 lg:grid-cols-[1fr_auto_1fr]">
+        <header className="container mx-auto grid max-w-[1420px] grid-cols-[minmax(0,1fr)_auto] items-start gap-4 px-4 sm:px-6 lg:grid-cols-[1fr_auto_1fr] lg:px-0">
           <div className="hidden lg:block" />
           <div className="min-w-0 overflow-hidden">
             <WebTabs />
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end pt-0.5">
             <AccountAvatar />
           </div>
         </header>
